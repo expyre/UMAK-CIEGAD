@@ -121,7 +121,7 @@
     
     .container {
      
-      max-width: 1200px;
+      max-width: 1400px;
       width: 100%;
       margin: 0 auto;
       padding: 0 12px;
@@ -288,7 +288,7 @@ rgba(255, 255, 255, 0.5)), url(./img/bgSearchh.jpg);
 }
 .highRight img{
     height: 400px;
-    width: 220px;
+    width: 250px;
 }
 .highRightContent{
     padding: 40px 0;
@@ -298,14 +298,14 @@ rgba(255, 255, 255, 0.5)), url(./img/bgSearchh.jpg);
 
 .highRightContent h1{
     text-align: center;
-    font-size: 15px;
+    font-size: 19   px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .highRightContent p{
     text-align: justify;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .highLeft{
@@ -316,14 +316,224 @@ rgba(255, 255, 255, 0.5)), url(./img/bgSearchh.jpg);
 }
 .highLeft img{
     width: 1400px;
-    height: 200px;
+    height: 210px;
     margin: 2px 0;
 }
 .highLeftContent p{
     text-align: justify;
-    font-size: 15px;
+    font-size: 17px;
 }
 /*END OF HIGHLIGHTS*/
 
 
 /* START OF WHATS NEW */
+
+.WhatsNewTitle{
+    padding: 2rem 10rem;
+}
+.WhatsNewTitle h1{
+    padding-top: 3rem;
+    font-weight: bold;
+    font-size: 5rem;
+    position: relative;
+}
+
+.WhatsNewTitle span{
+    background: var(--clr-light);
+    z-index: 40px;
+}
+
+.WhatsNewTitle h1::before{
+    content: "";
+    height: 5px;
+    width: 100vw;
+    background-color: var(--clr-dark);
+    position: absolute;
+    top: 62%;
+    right: 1000px;
+    z-index: -4;
+}
+.WhatsNewTitle h1::after{
+    content: "";
+    height: 5px;
+    width: 100vw;
+    background-color: var(--clr-dark);
+    position: absolute;
+    top: 62%;
+    z-index: -4;
+}
+
+
+
+
+
+.whatsNew{
+    padding: 1rem 0;
+    padding-bottom: 10rem;
+}
+
+.whatsNew__wrapper{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-gap: 15px;
+}
+
+.whatsNew__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.whatsNew__left img{
+    width: 20rem;
+    height: 20rem;
+
+}
+
+.whatsNew__leftContent p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.whatsNew__leftContent h1{
+    font-weight: bold;
+    font-size: 21px;
+    padding-bottom: 15px;
+}
+
+.whatsNew__mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsNew__mid img{
+    height: 25rem;
+    width: 30rem;
+}
+
+.whatsNew__midContent p{
+    font-size: 20px;
+    text-align: justify;
+}
+.whatsNew__midContent h2{
+    font-weight:500;
+    font-size: 16px;
+}
+
+.whatsNew__midContent h1{
+    font-size: 21px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.whatsNew__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsNew__right img{
+    margin-left: 10rem;
+    height: 22rem;
+    width: 22rem;
+}
+
+.whatsNew__rightContent p{
+    font-size: 19px;
+    text-align: justify;
+    justify-content: end;
+}
+.whatsNew__rightContent span{
+    font-weight: bold;
+}
+
+.whatsNew__rightContent h1{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/*END OF WHATS NEW SECTION*/
+
+
+/*START OF FOOTER*/
+.footer{
+    padding: 3rem 0;
+    background-color: var(--clr-primary);
+}
+
+.footer__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__left h1{
+    color: var(--clr-light);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 17px;
+}
+.footer__left h2{
+    color: var(--clr-light);
+    text-align: center;
+    font-size: 17px;
+}
+.footer__left h3{
+    color: var(--clr-light);
+    text-align: center;
+    font-size: 17px;
+}
+
+.footer__left{
+    margin: 0 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer__mid{
+    margin: 0 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__mid h1{
+    color: var(--clr-light);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 17px;
+}
+.footer__mid h2{
+    color: var(--clr-light);
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.footer__right{
+    margin: 0 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__right h1{
+    color: var(--clr-light);
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 17px;
+}
+.footer__right ul li{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.footer__right ul li a{
+    font-size: 17px;
+    color: var(--clr-light);
+}
