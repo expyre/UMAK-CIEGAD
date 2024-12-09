@@ -622,7 +622,7 @@
 
 /*START OF SERVICES PAGE*/
 .servicesBg{
-    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(img/services/pic1.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(img/services/pic0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -670,75 +670,122 @@
     z-index: -4;
 }
 
-.services__wrapper{
-    display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-    justify-items: center;
-  grid-gap: 1rem;
+.servicesTitle{
+    background-color: var(--clr-primary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.serviceRight a{
+.servicesTitle h1{
+    margin-left: 365px;
+    font-size: 40px;
+    font-weight: bold;
+}
 
+.services__wrapper{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.serviceBanner{
-    padding: 1rem 0;
-    display: flex;
-    gap: 0.5rem;
-    max-width: 1500px;
+.servicesContent{
+    background-color: var(--clr-primary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 15px 0;
+    padding: 6px 6px;
+    max-width: 750px;
     width: 100%;
+    justify-content: start;
 }
 
-.serviceRight h1{
-    color: var(--clr-primary);
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: center;
-  max-width: 100%;
+.servicesContent p{
+    text-align: justify;
+    font-size: 15px;
 }
 
-.serviceBanner{
+.servicesContent h2{
+    font-weight: bold;
+}
+.services__wrapper img{
+    margin-left: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+.ServiceTitle{
+    background-color: var(--clr-secondary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ServiceTitle h1{
+    margin-left: 1085px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Service__wrapper{
     display: flex;
-    flex-direction: row;
-  
-    .serviceLeft{
-      width: 155rem;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .serviceRight {
-      text-align: justify;
-    }
-  }
-
-.serviceRight.curriculum p{
-    font-size: 16px;
-    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.Services.ojt {
+    margin: 5px 0;
 }
 
-.serviceRight.curriculum a{
-    margin-left: 60px;
+.ServicesContent{
+    background-color: var(--clr-secondary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 15px 0;
+    padding: 6px 6px;
+    max-width: 750px;
+    width: 100%;
+    justify-content: start;
 }
 
-.serviceRight.coaching p{
-    font-size: 16px;
-    margin-left: 60px
+.ServicesContent p{
+    text-align: justify;
+    font-size: 15px;
 }
 
-.serviceLeft.coachImg img{
-    width: 40px;
-    height: 20px;
-    margin-right: 10rem;
+.ServicesContent h2{
+    font-weight: bold;
+}
+.Service__wrapper img{
+    margin-right: 10px;
+    height: 300px;
+    width: 600px;
+}
 
+.ServiceTitle.program h1{
+    margin-left: 1355px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ServiceTitle.employ h1{
+    margin-left: 1135px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ServiceTitle.ojt h1{
+    margin-left: 1035px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ServiceTitle.priv h1{
+    margin-left: 745px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Services.priv {
+    margin: 5px 0;
+}
+.Service__wrapper.priv{
+    margin: 15px 0;
 }
 
 
-  
 /*END OF SERVICES PAGE*/
 
 /*ACTIVITIES PAGE*/
