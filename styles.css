@@ -670,13 +670,12 @@
     z-index: -4;
 }
 
-.servicesTitle{
+.servTitle{
     background-color: var(--clr-primary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.servicesTitle h1{
-    margin-left: 365px;
+.servicesCont h1{
     font-size: 40px;
     font-weight: bold;
 }
@@ -711,13 +710,13 @@
     width: 600px;
 }
 
-.ServiceTitle{
+.ServTitle{
     background-color: var(--clr-secondary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.ServiceTitle h1{
-    margin-left: 1085px;
+.ServeCont h1{
+    text-align: end;
     font-size: 40px;
     font-weight: bold;
 }
@@ -755,34 +754,19 @@
     width: 600px;
 }
 
-.ServiceTitle.program h1{
-    margin-left: 1355px;
-    font-size: 40px;
-    font-weight: bold;
-}
 
-.ServiceTitle.employ h1{
-    margin-left: 1135px;
-    font-size: 40px;
-    font-weight: bold;
-}
 
-.ServiceTitle.ojt h1{
-    margin-left: 1035px;
-    font-size: 40px;
-    font-weight: bold;
-}
-.ServiceTitle.priv h1{
-    margin-left: 745px;
-    font-size: 40px;
-    font-weight: bold;
-}
+
+
 
 .Services.priv {
-    margin: 5px 0;
+    margin: 1px 0;
+}
+.Services.ojt {
+    margin: 10px 0;
 }
 .Service__wrapper.priv{
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 
