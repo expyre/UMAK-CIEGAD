@@ -658,7 +658,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
-    height: 50vh;
+    height: 45vh;
     padding-top: 150px;
     align-items: center;
 }
@@ -676,7 +676,6 @@
 
 .Services__title h1{
     color: var(--clr-primary);
-    padding-top: 3rem;
     text-align: center;
     font-weight: bold;
     font-size: 5rem;
