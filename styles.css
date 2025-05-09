@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root{
     --clr-dark: #2b2b2b;
     --clr-light: #FFF;
     --clr-primary: #2f89b3;
     --clr-secondary: #daad57;
-    --clr-semilight: #e5e5e5;
-    --font: "Poppins";
+    --clr-semilight: #e6e6e6;
+    --font: "Nunito";  
   
   }
   
@@ -95,7 +96,7 @@
     }
     body {
       color: #2b2b2b;
-      font-family: "Poppins", sans-serif;
+      font-family: "Nunito", sans-serif;
       font-size: 1.6rem;
       overflow-x: hidden;
       line-height: 1.4;
@@ -143,22 +144,22 @@
     }
     .header__wrapper{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
+        grid-template-columns: 1fr;
         align-items: center;
-        grid-gap: 20px;
+        grid-gap: 15px;
         
     }
 
     .header__left{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
   
     .header__left h1{
         justify-content: start;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         color: var(--clr-dark);
     }
@@ -169,28 +170,35 @@
     .header__right ul{
         display: flex;
         gap:20px;
-        justify-content: end;
+        justify-content: center;
     }
     .header__right ul a{
-        font-size: 25px;
+        font-size: 33px;
         text-decoration: none;
         font-weight: bold;
         color: var(--clr-dark);
 
     }
         /*WHEN CURSOR IS HOVERING THE NAVBAR*/
-        
-        .header__right li a:hover {
-            color: var(--clr-primary);
-          }
+    .header__right li a {
+    color: var(--clr-accent);
+
+    padding: 0.5rem 4rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.header__right li a:hover {
+    background: var(--clr-primary);
+    color: var(--clr-light);
+}
+
 /*END OF HEADER*/
 
 /*START OF BRIEF INFORMATION SECTION*/
 .biSect__bgImage{
-    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(img/home/Background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(img/home/background.png) center/107%;
+    
     padding-top: 250px;
   height: 100vh;
 }
@@ -200,8 +208,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: "Cedarville Cursive", cursive;
-    font-size:67px;
+    font-family: "Parisienne", cursive;
+    font-size:75px;
     font-weight:700;
     opacity: 100%;
     color: var(--clr-dark);
@@ -212,6 +220,7 @@
     text-align: justify;
     padding-top: 65px;
     font-size: 34px;
+    font-weight: 400;
 }
 .biSect{
     background-color: var(--clr-dark);
@@ -286,6 +295,25 @@
     font-size: 25px;
 }
 
+
+.view-more-btn {
+margin-left: 90.5rem;
+    padding: 1rem 2.5rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(47, 137, 179, 0.3);
+}
+
+.view-more-btn:hover {
+    background-color: var(--clr-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(218, 173, 87, 0.3);
+}
+
 /*END OF Brief Services*/
 
 
@@ -293,6 +321,7 @@
 
 .WhatsNewTitle{
     padding: 2rem 10rem;
+
 }
 .WhatsNewTitle h1{
     color: var(--clr-primary);
@@ -325,16 +354,29 @@
 
 
 
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 .whatsNew{
     padding: 1rem 0;
     padding-bottom: 10rem;
+  
 }
 
 .whatsNew__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
+    
 }
 
 .whatsNew__left{
@@ -530,6 +572,16 @@
     font-size: 23px;
 }
 
+
+.footer a {
+    color: var(--clr-semilight);
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--clr-primary);
+}
+
 .coprightbanner{
     padding: 1rem 0;
     background-color: var(--clr-primary);
@@ -579,12 +631,46 @@
     align-items:center;
     text-align: center;
     justify-content: center;
-    font-family: "Cedarville Cursive", cursive;
-    font-size:65px;
+    font-family: "Parisienne", cursive;
+    font-size:60px;
     font-weight:700;
     opacity: 100%;
     color: var(--clr-dark);
     }
+
+    
+.about__title h1{
+    color: var(--clr-primary);
+    left: -40%;
+    font-weight: bold;
+    font-size: 10rem;
+    position: relative;
+}
+.about__title h1::before{
+    content: "";
+    height: 5px;
+    width: 50vw;
+    background-color: var(--clr-primary);
+    position: absolute;
+    top: 42%;
+    left: 220px;
+    z-index: -4;
+}
+.about__title h1::after{
+    content: "";
+    height: 5px;
+    width: 50vw;
+    background-color: var(--clr-primary);
+    position: absolute;
+    top: 42%;
+    right: 220px;
+    z-index: -4;
+}
+
+.about__title{
+    justify-content: end;
+    justify-items: end;
+}
 
 /*RATIONALE BANNER*/
 .rationale {
@@ -614,7 +700,7 @@
 }
 
 .aboutMain h1{
-    color: var(--clr-light);
+    color: var(--clr-primary);
     font-size: 40px;
     font-weight: bold;
 }
@@ -626,7 +712,7 @@
 }
 
 .aboutSidebar h1{
-    color: var(--clr-light);
+    color: var(--clr-primary);
     font-size: 40px;
     font-weight: bold;
 }
@@ -667,8 +753,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: "Cedarville Cursive", cursive;
-    font-size:75px;
+    font-family: "Parisienne", cursive;
+    font-size:85px;
     font-weight:700;
     opacity: 100%;
     color: var(--clr-dark);
@@ -788,7 +874,47 @@
     width: 600px;
 }
 
+/* Updated Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 4rem;
+    padding: 4rem 0;
+}
 
+.service-card {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px;
+    padding-top: 4rem;
+    justify-items: center;
+    background-color: var(--clr-semilight);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 30rem;
+    height: 35rem;
+    text-align: center;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 185px;
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    color: var(--clr-secondary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-link {
+    margin-top: auto;
+}
 
 
 
@@ -881,225 +1007,227 @@
         margin: 50px;
         line-height: 21px;
     }
+/*APPOINTMENT BUTTON*/
+    .appointment-cta {
+        text-align: center;
+
+        position: relative;
+
+    }
+    
+    .appointment-btn {
+        background-color: var(--clr-primary);
+        color: var(--clr-light);
+        padding: 1.8rem 5rem;
+        border-radius: 15px;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        border: 3px solid var(--clr-primary);
+        position: relative;
+        overflow: hidden;
+        font-family: var(--font);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    
+
+    .appointment-btn:hover {
+        background-color: var(--clr-secondary);
+        color: var(--clr-dark);
+        border-color: var(--clr-secondary);
+        transform: translateY(-3px);
+        box-shadow: rgba(50, 50, 93, 0.35) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    
+
+    
+    .appointment-btn i {
+        margin-right: 1rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .appointment-btn:hover i {
+        transform: rotate(360deg);
+    }
+    
+    /* Matching your header's shadow effect */
+    .appointment-cta {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    
 
 
+
+/*APPOINTMENT TAB*/
+/* Add to styles.css */
+/* Appointment Form Styles */
+.appointment-section {
+    padding: 6rem 0;
+    background: var(--clr-semilight);
+}
+
+.appointment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem;
+    background: var(--clr-light);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, 
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.appointment-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.appointment-title {
+    color: var(--clr-primary);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    font-family: "Parisienne", cursive;
+}
+
+.appointment-subtitle {
+    color: var(--clr-dark);
+    font-size: 1.8rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 2.5rem;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--clr-dark);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    border: 2px solid var(--clr-primary);
+    border-radius: 8px;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    background: var(--clr-semilight);
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus {
+    outline: none;
+    border-color: var(--clr-secondary);
+    box-shadow: 0 0 8px rgba(218, 173, 87, 0.3);
+}
+
+.service-select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232f89b3'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    background-size: 1.8rem;
+}
+
+.appointment-submit {
+    background: var(--clr-primary);
+    color: var(--clr-light);
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.appointment-submit:hover {
+    background: var(--clr-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(218, 173, 87, 0.3);
+}
+
+.date-picker-container {
+    position: relative;
+}
+
+.date-picker-container::after {
+    content: "📅";
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.6rem;
+    color: var(--clr-primary);
+}
 
 /*POP UP BOX*/
 body {
 	position: relative;
 }
 
+
+.service-card {
+    span h1 a {
+        color: var(--clr-dark); /* Use your existing color variable */
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        transition: all 0.3s ease;
+        
+        /* Animated underline effect */
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--clr-light); /* Use your existing color variable */
+            transition: width 0.3s ease;
+        }
+
+        &:hover {
+            color: var(--clr-primary);
+            transform: translateY(-2px);
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
 .bg-overlay {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-.bg-overlay2 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-.bg-overlay3 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1000;
 }
 
-.bg-overlay4 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
+.bg-overlay:target {
+    visibility: visible;
+    opacity: 1;
 }
-
-.bg-overlay5 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-.bg-overlay6 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-.bg-overlay7 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-.bg-overlay8 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-.bg-overlay9 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-.bg-overlay10 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-.bg-overlay11 {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-
-	&:target {
-		visibility: visible;
-		opacity: 1;
-	}
-}
-
-
 .subscribe-optin {
 	position: relative;
-
+    z-index: 1001;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -1115,10 +1243,10 @@ body {
 
 	.optin-close {
 		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		top: 2rem;
+		right: 3rem;
 		color: #000;
-		font-size: 1rem;
+		font-size: 2rem;
 		text-decoration: none;
 
 		&:hover {
@@ -1156,6 +1284,9 @@ body {
 }
 
 
+
+
+
 .btn--nobg{
 color: var(--clr-dark);
 }
@@ -1163,3 +1294,5 @@ color: var(--clr-dark);
 .btn--nobg:hover{
   color: var(--clr-primary);
 }
+
+
